@@ -19,9 +19,9 @@ RSpec.describe LearningHash do
       end
     end
   end
-  
 
-  xdescribe '#bar_key' do
+
+  describe '#bar_key' do
     inputs_and_outputs = [
       {input: {}, output: nil},
       {input: {foo: 'bar'}, output: nil},

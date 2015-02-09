@@ -2,12 +2,11 @@
 
 class LearningHash
   def foo_key(hash)
-    hash.each_pair do |k,v|
-      
+    hash[:foo]
   end
 
   def bar_key(hash)
-    # your code here
+    
   end
 
   def key_stringer(hash)
