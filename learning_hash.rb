@@ -10,7 +10,10 @@ class LearningHash
   end
 
   def key_stringer(hash)
-    # your code here
-    # hint see http://ruby-doc.org/core-2.1.5/Hash.html#method-i-each_key
+    result = ""
+    hash.each_key do |key|
+      result += key.to_s
+    end
+    return result
   end
 end
