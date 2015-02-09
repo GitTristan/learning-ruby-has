@@ -6,7 +6,7 @@ class LearningHash
   end
 
   def bar_key(hash)
-    
+    hash[:bar]
   end
 
   def key_stringer(hash)

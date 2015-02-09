@@ -39,7 +39,7 @@ RSpec.describe LearningHash do
     end
   end
 
-  xdescribe '#key_stringer' do
+  describe '#key_stringer' do
     inputs_and_outputs = [
       {input: {}, output: ''},
       {input: {nil => 'stuff'}, output: ''},
