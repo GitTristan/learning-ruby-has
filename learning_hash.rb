@@ -2,7 +2,8 @@
 
 class LearningHash
   def foo_key(hash)
-    # your code here
+    hash.each_pair do |k,v|
+      
   end
 
   def bar_key(hash)
