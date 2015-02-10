@@ -16,4 +16,40 @@ class LearningHash
     end
     return result
   end
+
+
+  def value_stringer(hash)
+    result = ""
+    hash.each_value do |value|
+      result << value.to_s
+    end
+    return result
+  end
+
+  def key_and_value_stringer(hash)
+    result = ""
+    hash.each do |key, value|
+      result << key.to_s + value.to_s
+    end
+    return result
+  end
+
+  def reversed_key_and_value_stringer(hash)
+    result = ""
+    hash.each do |key, value|
+      result << key.to_s + value.to_s
+    end
+    return result.reverse
+  end
+  #Another example that builds on last problem
+  #def reversed_key_and_value_stringer(hash)
+    #key_and_value_stringer(hash.reverse)
+
+  def polite_is_empty?(hash)
+    if hash.empty?
+      "Yes ma'am"
+    else
+      "No ma'am"
+    end
+  end
 end

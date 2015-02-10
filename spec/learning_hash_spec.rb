@@ -60,7 +60,7 @@ RSpec.describe LearningHash do
     end
   end
 
-  xdescribe '#value_stringer' do
+  describe '#value_stringer' do
     inputs_and_outputs = [
       {input: {nil => 'ruby is cool', nil: ' and weird'}, output: 'ruby is cool and weird'},
       {input: {[1,2,3] => [256,512,1024]}, output: '[256, 512, 1024]'},
@@ -79,7 +79,7 @@ RSpec.describe LearningHash do
     end
   end
 
-  xdescribe '#key_and_value_stringer' do
+  describe '#key_and_value_stringer' do
     inputs_and_outputs = [
       {input: {foo: 'bar', 'baz' => 'hi'}, output: 'foobarbazhi'},
       {input: {[1] => [1,2]}, output: '[1][1, 2]'},
@@ -99,7 +99,7 @@ RSpec.describe LearningHash do
     end
   end
 
-  xdescribe '#reversed_key_and_value_stringer' do
+  describe '#reversed_key_and_value_stringer' do
     inputs_and_outputs = [
       {input: {foo: 'bar', 'baz' => 'hi'}, output: 'ihzabraboof'},
       {input: {[1] => [1,2]}, output: ']2 ,1[]1['},
@@ -119,7 +119,7 @@ RSpec.describe LearningHash do
     end
   end
 
-  xdescribe '#polite_is_empty?' do
+  describe '#polite_is_empty?' do
     inputs_and_outputs = [
       {input: {}, output: "Yes ma'am"},
       {input: {nil => 'yup'}, output: "No ma'am"},
